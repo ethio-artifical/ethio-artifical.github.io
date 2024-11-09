@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataset and Code Repository For Continuous Ethiopian Sign Language</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .image-gallery img {
+            width: 250px;
+            height: 150px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        .dataset-details {
+            background-color: #eef2f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .dataset-section {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1>Dataset and Code Repository for Continuous Ethiopian Sign Language</h1>
+        </center>
+
+        <!-- Sample Image Gallery -->
+        <div class="image-gallery">
+            <div><a href="index/char.png" target="_blank"><img src="images/sample_image1.png" alt="Sample Image 1"></a></div>
+            <div><a href="index/tex.png" target="_blank"><img src="images/sample_image2.jpg" alt="Sample Image 2"></a></div>
+            <div><a href="index/char.png" target="_blank"><img src="images/sample_image3.jpg" alt="Sample Image 3"></a></div>
+            <div><a href="index/tex.png" target="_blank"><img src="images/sample_image4.jpg" alt="Sample Image 4"></a></div>
+        </div>
+        <p align="center"><em>Sample images from the Continuous Ethiopian Sign Language (CESL) Dataset</em></p>
+
+        <!-- Dataset Description -->
+        <div class="dataset-details">
+            <h2>CESL Dataset Overview</h2>
+            <p>The Continuous Ethiopian Sign Language (CESL) dataset was created to support EthSL recognition due to the lack of publicly available datasets in this domain. The dataset contains <strong>1,320 videos</strong> from <strong>22 signers</strong> (14 men and 8 women) aged 10-60, covering various signing speeds and styles. The dataset captures 30 sentences selected from beginner sign language books, focusing on family, occupations, and daily life.</p>
+            <p>Data collection was conducted at Fasilo Secondary School and Yekatit 23 Primary School in Bahir Dar, Ethiopia. The recordings feature a <strong>green background</strong> with signers wearing black to improve clarity, recorded using a <strong>Canon Mark IV</strong> camera in full HD (1920x1080 pixels) at 25 frames per second.</p>
+
+            <!-- Dataset Summary Table -->
+            <div class="dataset-section">
+                <h3>Dataset Statistics</h3>
+                <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse:collapse;">
+                    <tr><td>Resolution</td><td>1920x1080 pixels</td></tr>
+                    <tr><td>Total Videos</td><td>1,320</td></tr>
+                    <tr><td>Vocabulary Size</td><td>65 words</td></tr>
+                    <tr><td>Sentence Count</td><td>30</td></tr>
+                    <tr><td>Duration</td><td>2-15 seconds</td></tr>
+                </table>
+            </div>
+
+            <!-- Dataset Splits -->
+            <div class="dataset-section">
+                <h3>Suggested Splits</h3>
+                <p><strong>Signer-Independent Split</strong>: Tests the model on unseen signers. Data from 16 signers is used for training, while 6 are divided into validation and testing sets.</p>
+                <p><strong>Unseen Sentence Split</strong>: Separates the data into training and testing based on sentence content. 25 sentences are used for training, and 5 are reserved for testing, allowing the model to generalize to new content.</p>
+            </div>
+
+            <!-- Download Links -->
+            <div class="dataset-section">
+                <h3>Download Dataset</h3>
+                <p>
+                    <a href="https://zenodo.org/records/10800699">Zenodo Link</a><br>
+                  
+                </p>
+            </div>
+            <div class="dataset-section">
+                <h3>Download Code and Try</h3>
+                <p>
+                    <a href=/ethio-artifical/CESLR">Github Link </a><br>
+                  
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <footer>
+            <h2>Citation</h2>
+            <p>If you need any additional information, contact us at:</p>
+            <p><strong>Anteneh Yehalem:</strong> <a href="mailto:artificialintel02@gmail.com">artificialintel02@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
